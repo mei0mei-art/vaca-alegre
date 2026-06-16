@@ -121,5 +121,16 @@ nav {
     width: fit-content;
     cursor: pointer;
     transition: background .2s;
+     font-size: 12px;
 }
+.hero-menu-item:hover{
+    background-color: #ede8ff;
+
+}
+.hero-menu-item svg{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
 
