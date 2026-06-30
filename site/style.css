@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #fff;
     color: #1a1033;
     overflow-x: hidden;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 48px ;
+    padding: 18px 48px;
     position: sticky;
     background-color: rgba(255, 255, 255, 0.92);
     top: 0;
@@ -22,38 +24,44 @@ nav{
     border-bottom: 2px solid rgba(108, 43, 255, 0.07);
 }
 
-.nav-logo{
+.nav-logo {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 32px;
     list-style: none;
 }
-.nav-links a{
+
+.nav-links a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     color: #5a4b7a
 }
-.nav-links a:hover{
+
+.nav-links a:hover {
     color: #6c2bff;
 }
-.nav-actions{
+
+.nav-actions {
     display: flex;
     align-items: center;
     gap: 14px;
 }
-.nav-cart{
+
+.nav-cart {
     color: #5a4b7a;
     display: flex;
     align-items: center;
     gap: 4px;
 
 }
-.btn-entrar{
+
+.btn-entrar {
     background-color: #6c2bff;
     color: white;
     border: none;
@@ -62,32 +70,39 @@ nav{
     gap: 6px;
     transform: background .2s, transform .15s;
 }
-.btn-entrar:hover{
+
+.btn-entrar:hover {
     background: #5519ee;
-    transform: translateY(-1px);    
+    transform: translateY(-1px);
 }
-.btn-entrar svg{
-    width: 14px; height: 14px;
+
+.btn-entrar svg {
+    width: 14px;
+    height: 14px;
 }
-.hero{
+
+.hero {
     padding: 60px 48px;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-.hero-topo{
+
+.hero-topo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     margin-bottom: 30px;
 }
-.hero-text{
+
+.hero-text {
     flex: 1;
     min-width: 400px;
 }
-.hero-title{
+
+.hero-title {
     font-family: "Bitter", serif;
     font-weight: bold;
     font-size: 102px;
@@ -95,17 +110,20 @@ nav{
     letter-spacing: 5px;
     color: #6c2bff;
 }
-.hero-title .alegre{
+
+.hero-title .alegre {
     color: #e57ae0;
 }
-.hero-menu{
+
+.hero-menu {
     width: 320px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-left: auto;
 }
-.hero-menu-item{
+
+.hero-menu-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -118,33 +136,39 @@ nav{
     transition: background .2s;
     font-size: 12px;
 }
-.hero-menu-item:hover{
+
+.hero-menu-item:hover {
     background-color: #ede8ff;
 }
-.hero-menu-item svg{
+
+.hero-menu-item svg {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
 }
-.hero-menu-item.active{
+
+.hero-menu-item.active {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #6c2bff;
 }
-.hero-banner{
-    position:relative;
+
+.hero-banner {
+    position: relative;
     border-radius: 28px;
     min-height: 300px;
     overflow: hidden;
 }
-.hero-banner img{
+
+.hero-banner img {
     width: 100%;
     height: 650px;
     object-fit: cover;
     display: block;
 }
-.hero-banner-content{
+
+.hero-banner-content {
     position: absolute;
     top: 12%;
     left: 50%;
@@ -152,18 +176,21 @@ nav{
     width: 100%;
     transform: translateX(-50%);
 }
-.hero-banner-content p{
+
+.hero-banner-content p {
     color: white;
     margin-bottom: 25px;
     font-size: 20px;
-    text-shadow: 0 4px 12px rgba(0,0,0,.35);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, .35);
     line-height: 1.5;
 }
-.hero-banner-content p strong{
+
+.hero-banner-content p strong {
     color: #fff;
     font-weight: bold;
 }
-.btn-contato{
+
+.btn-contato {
     display: inline-flex;
     align-items: center;
     gap: 14px;
@@ -176,7 +203,8 @@ nav{
     cursor: pointer;
     transition: all .3s ease;
 }
-.btn-contato::before{
+
+.btn-contato::before {
     content: "➝";
     width: 42px;
     height: 42px;
@@ -187,16 +215,20 @@ nav{
     justify-content: center;
     transition: transform .4s ease;
 }
-.btn-contato:hover::before{
+
+.btn-contato:hover::before {
     transform: translateX(10px);
 }
-.btn-contato:hover{
+
+.btn-contato:hover {
     transform: translateY(-2px);
 }
-.cardapio{
+
+.cardapio {
     padding: 80px 48px 60px;
 }
-.cardapio-title{
+
+.cardapio-title {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 46px;
@@ -205,18 +237,22 @@ nav{
     letter-spacing: -1px;
     color: #6c2bff;
 }
-.carousel-wrapper{
+
+.carousel-wrapper {
     position: relative;
 }
-.carousel-track-outer{
+
+.carousel-track-outer {
     overflow: hidden;
     border-radius: 18px;
 }
-.carousel-track{
+
+.carousel-track {
     display: flex;
     gap: 20px;
 }
-.card{
+
+.card {
     flex: 0 0 calc(33.333% - 14px);
     border-radius: 18px;
     overflow: hidden;
@@ -228,10 +264,12 @@ nav{
     transition: transform .25s;
     background-color: #f6f4ff;
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-4px);
 }
-.card-img-placeholder{
+
+.card-img-placeholder {
     position: absolute;
     background: linear-gradient(160deg, #ddd5ff 0%, #f8d7fa 100%);
     display: flex;
@@ -240,43 +278,51 @@ nav{
     text-transform: uppercase;
     color: #f8f7f9;
     inset: 0;
-   
+
 }
-.card .featured .card-img-placeholder{
-     background: linear-gradient(160deg, #a78bfa 0%, #e879f9 100%);
+
+.card .featured .card-img-placeholder {
+    background: linear-gradient(160deg, #a78bfa 0%, #e879f9 100%);
 }
-.card-info{
+
+.card-info {
     position: relative;
-    background: linear-gradient(to top rgba(20,10,40,0.82) 0%, transparent 100%);
+    background: linear-gradient(to top rgba(20, 10, 40, 0.82) 0%, transparent 100%);
     padding: 20px 18px 18px;
     color: #fff;
 }
-.card-info h3{
+
+.card-info h3 {
     font-family: sans-serif;
     margin-bottom: 6px;
 }
-.card-info p{
-    color:white;
+
+.card-info p {
+    color: white;
     line-height: 1.5;
     margin-bottom: 12px;
 }
-.card-tag{
+
+.card-tag {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     color: white;
 }
-.card-tag::before{
+
+.card-tag::before {
     content: "❤︎";
     color: #e57ae0;
 }
-.carousel-controls{
+
+.carousel-controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 28px;
 }
-.carousel-btn{
+
+.carousel-btn {
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -290,32 +336,38 @@ nav{
     transition: background .2s, transform .15s;
     font-size: 20px;
 }
-.carousel-btn:hover{
+
+.carousel-btn:hover {
     background-color: #24105c;
     transform: scale(1.08);
 }
-.carousel-dots{
+
+.carousel-dots {
     display: flex;
     gap: 8px;
     align-items: center;
 }
-footer{
+
+footer {
     background-color: #f6f4ff;
     padding: 24px 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid rgba(108,43,255,0.08);
+    border-top: 1px solid rgba(108, 43, 255, 0.08);
 }
-.footer-copy{
+
+.footer-copy {
     color: #5519ee;
     letter-spacing: 5px;
 }
-.footer-socials{
+
+.footer-socials {
     display: flex;
     gap: 14px;
 }
-.footer-socials a{
+
+.footer-socials a {
     width: 30px;
     height: 30px;
     background-color: rgba(108, 43, 255, 0.1);
@@ -324,4 +376,47 @@ footer{
     justify-content: center;
     color: #24105c;
     text-decoration: none;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d8d0f0;
+}
+
+.dot.active {
+    background-color: #a78bfa;
+    transform: scale(1.35);
+}
+
+.descricao {
+    text-align: center;
+    font-size: 40px;
+}
+
+.descricao h1 {
+    color: #5519ee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+   gap: 13px;
+   margin-left: 30px;
+  
+ 
+}
+.card06 h3 {
+  margin-bottom: 10px; /* Controla o espaço logo abaixo do h3 */
+}
+
+.card06 p {
+  margin-top: 0; /* Remove a margem padrão superior do parágrafo */
+}
+
+.container img {
+    border-radius: 500px;
+    max-width: 150px;
 }
